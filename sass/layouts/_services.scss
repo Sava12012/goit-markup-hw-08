@@ -1,6 +1,24 @@
 .services {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }  
+}
+
+.services-list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-item__img {
+    position: relative;
+}
+
+.services-item__svg {
+    display: block;
 }
 
 .title_h2 {
@@ -10,25 +28,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
-}
-
-.services-list {
-    display: flex;
-    margin-top: 50px;
-}
-
-.services-item {
-    &:not(:last-child){
-    margin-right: 30px;
-    }
-}
-
-.services-item__img {
-    position: relative;
-}
-
-.services-item__svg {
-    display: block;
 }
 
 .services-text {

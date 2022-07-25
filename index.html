@@ -20,14 +20,11 @@
   <!-- Castom styles -->
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-
-
-
 </head>
 
 <body>
   <!-- Heder section -->
-  <header class=" header">
+  <!-- <header class=" header">
     <div class="container header-container">
       <a class="header-logo link" href="./index.html"><span class="span">Web</span>Studio</a>
       <nav class="header-nav">
@@ -56,78 +53,25 @@
         </a>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <!-- Main content -->
   <main>
     <!-- Hero section -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero-h1">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button class="button" type="button" data-modal-open>Заказать услугу</button>
 
-        <!-- Модалка -->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="button-close" type="button" data-modal-close>
-              <svg class="button-svg" width="18" height="18">
-                <use href="./images/image.svg#button_clouse"></use>
-              </svg>
-            </button>
-            <form class="modal-form">
-              <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-              <div class="modal-field">
-                <label for="name" class="form-label">Имя</label>
-                <div class="modal_icon">
-                  <svg class="form-icon" width="18" height="18">
-                    <use href="./images/image.svg#icon-person"></use>
-                  </svg>
-                  <input type="text" class="form-input" name="name" id="name" />
-                </div>
-              </div>
-              <div class="modal-field">
-                <label for="tel" class="form-label">Телефон</label>
-                <div class="modal_icon">
-                  <svg class="form-icon" width="18" height="18">
-                    <use href="./images/image.svg#icon-phone"></use>
-                  </svg>
-                  <input type="tel" class="form-input" name="tel" id="tel" />
-                </div>
-              </div>
-              <div class="modal-field">
-                <label for="mail" class="form-label">Почта</label>
-                <div class="modal_icon">
-                  <svg class="form-icon" width="18" height="18">
-                    <use href="./images/image.svg#icon-email-black"></use>
-                  </svg>
-                  <input type="email" class="form-input" name="mail" id="mail" />
-                </div>
-              </div>
-              <div class="modal-field">
-                <label for="comment" class="form-label">Комментарий</label>
-                <textarea name="" class="form-textarea" id="comment" rows="10" placeholder="Введите текст"></textarea>
-              </div>
-              <div class="modal-checkbox">
-                <label class="modal-polici">
-                  <input type="checkbox" class="form-checkbox-input" name="topic" value="polici" id="polici">
-                  <span class="form-icon-checkbox"></span>
-                  <span class="form-checkbox-agreement">
-                    Cоглашаюсь с рассылкой и принимаю<a class="modal-polici-link" href="">Условия договора</a>
-                  </span>
-                </label>
-              </div>
-              <button class="modal-button" type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
+
       </div>
-    </section>
+    </section> -->
 
     <!-- About section -->
     <section class="about">
       <div class="about-div container">
-        <ul class="about-container list">
-          <li class="about-container__item">
+        <ul class="about-container card-set list">
+          <li class="about-container__item card-set__item">
             <div class="about-container__img">
               <svg class="" width="70" height="70">
                 <use href="./images/image.svg#icon-antenna"></use>
@@ -137,7 +81,7 @@
             <p class="about-text">Идейные соображения, а также начало повседневной работы по
               формированию позиции.</p>
           </li>
-          <li class="about-container__item">
+          <li class="about-container__item card-set__item">
             <div class="about-container__img">
               <svg class="" width="70" height="70">
                 <use href="./images/image.svg#icon-clock"></use>
@@ -147,7 +91,7 @@
             <p class="about-text">Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.</p>
           </li>
-          <li class="about-container__item">
+          <li class="about-container__item card-set__item">
             <div class="about-container__img">
               <svg class="" width="70" height="70">
                 <use href="./images/image.svg#icon-diagram"></use>
@@ -157,7 +101,7 @@
             <p class="about-text">Равным образом консультация с широким активом в значительной степени
               обуславливает.</p>
           </li>
-          <li class="about-container__item">
+          <li class="about-container__item card-set__item">
             <div class="about-container__img">
               <svg class="" width="70" height="70">
                 <use href="./images/image.svg#icon-astronaut"></use>
@@ -174,22 +118,22 @@
     <section class="services">
       <div class="container">
         <h2 class="title_h2">Чем мы занимаемся</h2>
-        <ul class="services-list list">
-          <li class="services-item">
+        <ul class="services-list list card-set">
+          <li class="services-item card-set__item">
             <div class="services-item__img">
               <img class="services-item__svg" src="./images/peculiarities-content/img-1.jpg"
                 alt="Создание кода на планшете" width="370" height="294" />
               <p class="services-text">Десктопные приложения</p>
             </div>
           </li>
-          <li class="services-item">
+          <li class="services-item card-set__item">
             <div class="services-item__img">
               <img class="services-item__svg" src="./images/peculiarities-content/img-2.jpg"
                 alt="Создание кода на телефоне" width="370" height="294" />
               <p class="services-text">Мобильные приложения</p>
             </div>
           </li>
-          <li class="services-item">
+          <li class="services-item card-set__item">
             <div class="services-item__img">
               <img class="services-item__svg" src="./images/peculiarities-content/img-3.jpg"
                 alt="Создание векторного изображения" width="370" height="294" />
@@ -203,9 +147,9 @@
     <section class="team">
       <div class="container">
         <h2 class="title_h2">Наша команда</h2>
-        <ul class="team-list list">
-          <li class="team-item">
-            <img src="./images/team-content/img-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+        <ul class="team-list card-set list">
+          <li class="team-item card-set__item">
+            <img src="./images/team-content/img-1.jpg" alt="Игорь Демьяненко" width="270" height="" />
             <div class="team-card">
               <h3 class="team-item__name">Игорь Демьяненко</h3>
               <p class="team-item__job" lang="en">Product Designer</p>
@@ -241,7 +185,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set__item">
             <img src="./images/team-content/img-2.jpg" alt="Ольга Репина" width="270" height="260" />
             <div class="team-card">
               <h3 class="team-item__name">Ольга Репина</h3>
@@ -278,7 +222,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set__item">
             <img src="./images/team-content/img-3.jpg" alt="Николай Тарасов" width="270" height="260" />
             <div class="team-card">
               <h3 class="team-item__name">Николай Тарасов</h3>
@@ -315,7 +259,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li class="team-item card-set__item">
             <img src="./images/team-content/img-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
             <div class="team-card">
               <h3 class="team-item__name">Михаил Ермаков</h3>
@@ -357,7 +301,7 @@
     </section>
   </main>
   <!-- Customers -->
-  <section class="customers">
+  <!-- <section class="customers">
     <div class="container">
       <h2 class="title_h2">Постоянные клиенты</h2>
       <ul class="customers-list list">
@@ -405,9 +349,9 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
   <!-- Footer section -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer-had container">
       <a class="logo" href="./index.html" lang="en"><span class="span">Web</span>Studio</a>
       <h2 class="footer-h2">ПРИСОЕДИНЯЙТЕСЬ</h2>
@@ -470,7 +414,61 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <!-- Модалка -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="button-close" type="button" data-modal-close>
+        <svg class="button-svg" width="18" height="18">
+          <use href="./images/image.svg#button_clouse"></use>
+        </svg>
+      </button>
+      <form class="modal-form">
+        <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="modal-field">
+          <label for="name" class="form-label">Имя</label>
+          <div class="modal_icon">
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/image.svg#icon-person"></use>
+            </svg>
+            <input type="text" class="form-input" name="name" id="name" />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="tel" class="form-label">Телефон</label>
+          <div class="modal_icon">
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/image.svg#icon-phone"></use>
+            </svg>
+            <input type="tel" class="form-input" name="tel" id="tel" />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="mail" class="form-label">Почта</label>
+          <div class="modal_icon">
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/image.svg#icon-email-black"></use>
+            </svg>
+            <input type="email" class="form-input" name="mail" id="mail" />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="comment" class="form-label">Комментарий</label>
+          <textarea name="" class="form-textarea" id="comment" rows="10" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="modal-checkbox">
+          <label class="modal-polici">
+            <input type="checkbox" class="form-checkbox-input" name="topic" value="polici" id="polici">
+            <span class="form-icon-checkbox"></span>
+            <span class="form-checkbox-agreement">
+              Cоглашаюсь с рассылкой и принимаю<a class="modal-polici-link" href="">Условия договора</a>
+            </span>
+          </label>
+        </div>
+        <button class="modal-button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 
