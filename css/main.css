@@ -60,6 +60,11 @@ p {
   gap: var(--indent);
 }
 
+.card-set__item {
+  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 /** 
 |======================
 |  третій паршал
@@ -154,12 +159,12 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -582,26 +587,6 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about-container__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-}
-@media screen and (min-width: 1140px) {
-  .about-container__item {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
-  }
-}
-@media screen and (max-width: 767px) {
-  .about-container__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
@@ -741,8 +726,6 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
   }
 }
 .team-list .team-item {
@@ -750,23 +733,6 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
-}
-@media screen and (min-width: 768px) {
-  .team-list .team-item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-}
-@media screen and (min-width: 1140px) {
-  .team-list .team-item {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
-  }
-}
-@media screen and (max-width: 767px) {
-  .team-list .team-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 .team-list .team-card {
   padding-top: 30px;
