@@ -51,6 +51,10 @@ p {
   padding: 0;
 }
 
+.pading {
+  padding: 0;
+}
+
 .card-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,12 +163,12 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -376,6 +380,18 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-h1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-h1 {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .modal {
@@ -600,8 +616,6 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -629,11 +643,21 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   gap: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 768px) {
+  .about-container__img {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-container__img {
+    max-width: 270px;
+  }
 }
 
 .about-div {
@@ -783,21 +807,21 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
-  --items: 1;
-}
-@media screen and (min-width: 768px) {
-  .team-list .team-item {
-    --items: 2;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-list .team-item {
-    --items: 4;
-  }
 }
 .team-list .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team-list .team-card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list .team-card {
+    width: 270px;
+  }
 }
 .team-list .team-list-icon {
   display: -webkit-box;
@@ -985,19 +1009,39 @@ p {
 }
 
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 50px;
+  gap: var(--indent);
 }
-
-.customers-list_item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .customers-list_button {
@@ -1010,13 +1054,29 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
   -webkit-transition: color var(--anim-slow), border var(--anim-slow);
   transition: color var(--anim-slow), border var(--anim-slow);
+}
+@media screen and (min-width: 768px) {
+  .customers-list_button {
+    width: 226px;
+    --items: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-list_button {
+    width: 170px;
+  }
 }
 
 .customers-list_button:hover,
@@ -1029,6 +1089,12 @@ p {
   width: 106px;
   height: 60px;
   fill: currentColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {

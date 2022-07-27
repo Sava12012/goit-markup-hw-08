@@ -21,8 +21,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
+    // display: -webkit-inline-box;
+
+    // margin-top: -30px;
+    // margin-bottom: -30px;
   }
 }
 
@@ -41,11 +43,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   gap: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
 .about-div {
