@@ -1,54 +1,19 @@
 .current-link {
-    position: relative;
-    color: var(--acent-color);
-    display: flex;
-    align-items: center;
+  position: relative;
+  color: var(--acent-color);
+  display: flex;
+  align-items: center;
 }
 
 .current-link::before {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 4px;
-    display: inline-block;
-    margin-right: 10px;
-    background-color: var(--acent-color);
-    border-radius: 2px;
-}
-.header-group {
-    margin-left: auto;
-    display: flex;
-}
-
-.header-contact-svg {
-    fill: currentColor;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.header-group-mail {
-    margin-right: 50px;
-}
-
-.header-contact {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--label-color);
-    transition: var(--anim-slow);
-}
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--acent-color);
-}
-
-.header-contact:hover,
-.header-contact:focus {
-    color: var(--acent-color);
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: var(--acent-color);
+  border-radius: 2px;
 }
