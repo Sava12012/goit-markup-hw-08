@@ -55,6 +55,12 @@ p {
   padding: 0;
 }
 
+.img_team {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .card-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,7 +1109,7 @@ p {
   padding-bottom: 60px;
 }
 .footer .logo {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
