@@ -573,14 +573,20 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--white-color);
   border-radius: 5px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form {
@@ -598,8 +604,21 @@ p {
 
 .modal-text {
   color: var(--header-color);
-  width: 448px;
+  width: 370px;
   line-height: 1.15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-text {
+    width: 448px;
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -649,13 +668,19 @@ p {
 
 .form-checkbox-agreement {
   margin-left: 4px;
-  font-size: 14px;
-  line-height: 1.46;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox-agreement {
+    font-size: 14px;
+    line-height: 1.46;
+  }
 }
 
 .modal-polici {
@@ -688,7 +713,7 @@ p {
 }
 
 .form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -701,6 +726,11 @@ p {
   border: 1px solid var(--secondary-color);
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
+}
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+  }
 }
 
 .form-textarea {
