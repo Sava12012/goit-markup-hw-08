@@ -29,6 +29,10 @@
   }
 }
 
+.mobile-menu-btn:active {
+  fill: var(--acent-color);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;

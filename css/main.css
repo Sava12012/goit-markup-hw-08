@@ -261,6 +261,10 @@ p {
   opacity: 1;
 }
 
+.mobile-menu-btn:active {
+  fill: var(--acent-color);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -359,6 +363,11 @@ p {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: block;
+  }
+}
 
 .header-group {
   display: none;
@@ -366,6 +375,16 @@ p {
 @media screen and (min-width: 768px) {
   .header-group {
     display: block;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin-left: 305px;
   }
 }
 
@@ -390,30 +409,8 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--header-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 15px;
 }
-@media screen and (min-width: 768px) {
-  .header .header-logo {
-    width: 134px;
-    height: 28px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.07;
-    letter-spacing: 0.03em;
-    margin-right: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header .header-logo {
-    margin-right: 93px;
-  }
-}
-
-.header-container {
+.header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,6 +426,16 @@ p {
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
   gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header-list {
+    margin-left: 78px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-list {
+    margin-left: 93px;
+  }
 }
 
 .header-link {
@@ -473,10 +480,6 @@ p {
   text-align: center;
 }
 
-.header-group-mail {
-  margin-right: 50px;
-}
-
 .header-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,10 +495,29 @@ p {
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
 }
+@media screen and (min-width: 768px) {
+  .header-contact {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
 
 .header-contact:hover,
 .header-contact:focus {
   color: var(--acent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-group-mail {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-group-mail {
+    padding-bottom: 0;
+  }
 }
 
 .hero {
