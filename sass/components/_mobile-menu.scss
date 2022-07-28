@@ -21,12 +21,6 @@
   }
 }
 
-// .mobile-menu-burger:before {
-//   content: '';
-//   position: absolute;
-//   color: #2196f3;
-// }
-
 .mobile-menu-close {
   opacity: 0;
 
@@ -114,4 +108,11 @@
 .mobile-menu-socials-item:not(:last-child) .mobile-menu-socials-link {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu-color {
+  color: var(--header-color);
+}
+.mob-menu-color-contacts {
+  color: var(--label-color);
 }
