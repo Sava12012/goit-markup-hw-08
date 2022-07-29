@@ -1323,10 +1323,16 @@ p {
   text-decoration: none;
   color: var(--logo-color);
 }
+@media screen and (min-width: 768px) {
+  .footer .logo {
+    margin-left: 115px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer .logo {
     font-size: 26px;
     line-height: 1.19;
+    margin-left: 0;
   }
 }
 
@@ -1362,10 +1368,19 @@ p {
 
 .footer-address {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   margin-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    display: block;
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
 .footer .contact {
   font-weight: 400;
   font-size: 14px;
@@ -1401,8 +1416,9 @@ p {
 @media screen and (min-width: 768px) {
   .footer-h2 {
     display: block;
-    margin-left: 156px;
-    margin-top: 0;
+    margin: auto;
+    text-align: center;
+    margin-left: 234px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -1414,6 +1430,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-h2 {
     display: block;
+    margin: 0;
     margin-left: 156px;
     margin-top: 0;
     font-weight: 700;
@@ -1471,19 +1488,35 @@ p {
   }
 }
 
-.footer-newsletter {
+.footer-newsletter-new-tablet {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .footer-newsletter {
+  .footer-newsletter-new-tablet {
     display: block;
-    margin-left: 154px;
+    margin: 0 auto;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-newsletter-new-tablet {
+    display: none;
+  }
+}
+
+.footer-newsletter {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer-newsletter {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1505,9 +1538,33 @@ p {
   text-align: center;
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer-label {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-label {
-    margin-left: 93px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 85px;
+  }
+}
+
+.footer-label-new {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer-label-new {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-label-new {
+    display: none;
   }
 }
 
@@ -1515,6 +1572,11 @@ p {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-sing {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-sing {
@@ -1550,7 +1612,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 12px;
     width: 350px;
   }
 }
@@ -1565,7 +1626,15 @@ p {
 .footer-buttun-sing {
   width: 200px;
   height: 50px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -1580,6 +1649,19 @@ p {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .footer-buttun-sing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-buttun-sing {
@@ -1643,12 +1725,6 @@ p {
     margin-left: 85px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-soucial {
-    margin-left: 85px;
-  }
-}
-
 .list-icon-f {
   display: -webkit-box;
   display: -ms-flexbox;
