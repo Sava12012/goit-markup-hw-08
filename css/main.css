@@ -403,6 +403,8 @@ p {
   z-index: 10;
 }
 .header .header-logo {
+  padding-bottom: 16px;
+  padding-top: 16px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -539,7 +541,7 @@ p {
   .hero {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 758px;
+    max-width: 768px;
     max-height: 400px;
   }
 }
@@ -1099,18 +1101,46 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-.button-item {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio .button {
@@ -1152,18 +1182,31 @@ p {
 }
 
 .pictures-list {
-  margin-top: 50px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .pictures-list {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures-list {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .pictures-item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   cursor: pointer;
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
@@ -1173,16 +1216,20 @@ p {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.pictures-item:nth-child(3n) {
-  margin-right: 0;
-}
-.pictures-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
-}
-
 .pictures-overlay {
   position: relative;
   overflow: hidden;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .pictures-overlay {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures-overlay {
+    width: 370px;
+  }
 }
 
 .pictures-desc {
@@ -1204,20 +1251,44 @@ p {
 
 .card-wrap {
   display: block;
+  width: 450px;
 }
 .card-wrap:hover .pictures-desc, .card-wrap:focus .pictures-desc {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .card-wrap {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-wrap {
+    width: 370px;
+  }
 }
 
 .pictures-title-text {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .pictures-title-text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures-title-text {
+    width: 370px;
+  }
 }
 
 .pictures-img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .customers {
