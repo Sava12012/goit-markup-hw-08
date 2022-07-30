@@ -64,12 +64,11 @@
   display: block;
   width: 450px;
   @media screen and (min-width: 768px) {
-    width: 354px;
-    
     // NEW
+
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
