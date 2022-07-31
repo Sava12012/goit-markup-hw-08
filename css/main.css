@@ -351,6 +351,10 @@ p {
   color: var(--header-color);
 }
 
+.mob-menu-color-social {
+  color: var(--acent-color);
+}
+
 .mob-menu-color-contacts {
   color: var(--label-color);
 }
@@ -869,7 +873,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   gap: 30px;
   border-radius: 4px;
