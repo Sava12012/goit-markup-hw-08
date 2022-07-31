@@ -34,9 +34,6 @@
           <use class="mobile-menu-close" href="./images/image.svg#burger-close"></use>
         </svg>
       </button>
-
-
-
       <nav class="header-nav">
         <ul class="header-list list">
           <li class="header-item">
@@ -157,7 +154,27 @@
         <h2 class="title_h2">Наша команда</h2>
         <ul class="team-list card-set list">
           <li class="team-item card-set__item">
-            <img class="img_team" src="./images/team-content/img-1.jpg" alt="Игорь Демьяненко" width="270" height="" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-1_lg.webp 1x, images/team-content/img-1_lg@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-1_lg.jpg 1x, images/team-content/img-1_lg@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-1_md.webp 1x, images/team-content/img-1_md@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-1_md.jpg 1x, images/team-content/img-1_md@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-1_sm.webp 1x, images/team-content/img-1_sm@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-1_sm.jpg 1x, images/team-content/img-1_sm@2x.jpg 2x"
+                type="image/jpg" />
+              <img class="img_team" src="./images/team-content/img-1_sm.jpg" alt="Игорь Демьяненко" />
+            </picture>
             <div class="team-card">
               <h3 class="team-item__name">Игорь Демьяненко</h3>
               <p class="team-item__job" lang="en">Product Designer</p>
@@ -194,7 +211,28 @@
             </div>
           </li>
           <li class="team-item card-set__item">
-            <img class="img_team" src="./images/team-content/img-2.jpg" alt="Ольга Репина" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-3_lg.webp 1x, images/team-content/img-3_lg@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-3_lg.jpg 1x, images/team-content/img-3_lg@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-3_md.webp 1x, images/team-content/img-3_md@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-3_md.jpg 1x, images/team-content/img-3_md@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-3_sm.webp 1x, images/team-content/img-3_sm@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-3_sm.jpg 1x, images/team-content/img-3_sm@2x.jpg 2x"
+                type="image/jpg" />
+              <img class="img_team" src="./images/team-content/img-3_sm.jpg" alt="Ольга Репина" width="270"
+                height="260" />
+            </picture>
             <div class="team-card">
               <h3 class="team-item__name">Ольга Репина</h3>
               <p class="team-item__job" lang="en">Frontend Developer</p>
@@ -231,8 +269,28 @@
             </div>
           </li>
           <li class="team-item card-set__item">
-            <img class="img_team" src="./images/team-content/img-3.jpg" alt="Николай Тарасов" width="270"
-              height="260" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-2_lg.webp 1x, images/team-content/img-2_lg@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-2_lg.jpg 1x, images/team-content/img-2_lg@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-2_md.webp 1x, images/team-content/img-2_md@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-2_md.jpg 1x, images/team-content/img-2_md@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-2_sm.webp 1x, images/team-content/img-2_sm@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-2_sm.jpg 1x, images/team-content/img-2_sm@2x.jpg 2x"
+                type="image/jpg" />
+              <img class="img_team" src="./images/team-content/img-2_sm.jpg" alt="Николай Тарасов" width="270"
+                height="260" />
+            </picture>
             <div class="team-card">
               <h3 class="team-item__name">Николай Тарасов</h3>
               <p class="team-item__job" lang="en">Marketing</p>
@@ -269,7 +327,28 @@
             </div>
           </li>
           <li class="team-item card-set__item">
-            <img class="img_team" src="./images/team-content/img-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-4_lg.webp 1x, images/team-content/img-4_lg@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/team-content/img-4_lg.jpg 1x, images/team-content/img-4_lg@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-4_md.webp 1x, images/team-content/img-4_md@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 768px)"
+                srcset="./images/team-content/img-4_md.jpg 1x, images/team-content/img-4_md@2x.jpg 2x"
+                type="image/jpg" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-4_sm.webp 1x, images/team-content/img-4_sm@2x.webp 2x"
+                type="image/webp" />
+              <source media="(min-width: 767px)"
+                srcset="./images/team-content/img-4_sm.jpg 1x, images/team-content/img-4_sm@2x.jpg 2x"
+                type="image/jpg" />
+              <img class="img_team" src="./images/team-content/img-4_sm.jpg" alt="Михаил Ермаков" width="270"
+                height="260" />
+            </picture>
             <div class="team-card">
               <h3 class="team-item__name">Михаил Ермаков</h3>
               <p class="team-item__job" lang="en">UI Designer</p>
@@ -313,7 +392,7 @@
   <section class="customers">
     <div class="container">
       <h2 class="title_h2">Постоянные клиенты</h2>
-      <ul class="customers-list list card-set">
+      <ul class="customers-list card-set list">
         <li class="customers-list_item">
           <a class="customers-list_button link" href="">
             <svg class="customers-list_svg" width="106" height="60">
