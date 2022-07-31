@@ -24,6 +24,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
