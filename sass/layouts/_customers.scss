@@ -15,14 +15,12 @@
 
 .customers-list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
   gap: var(--indent);
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
   }
 }
 
@@ -56,9 +54,6 @@
 
   @media screen and (min-width: 768px) {
     width: 226px;
-    // --items: 3;
-    // display: flex;
-    // flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
