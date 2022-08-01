@@ -1,6 +1,5 @@
 .portfolio-list {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
@@ -8,6 +7,25 @@
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.portfolio-btn {
+  display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
   }

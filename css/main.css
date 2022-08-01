@@ -251,6 +251,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
+}
+.mobile-menu-btn.is-open {
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
@@ -623,13 +625,6 @@ p {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
-
 .modal-form {
   padding: 40px;
   display: -webkit-box;
@@ -657,7 +652,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .modal-text {
-    width: 448px;
+    width: auto;
     line-height: 1.15;
   }
 }
@@ -711,6 +706,13 @@ p {
   width: 100%;
   margin-left: 4px;
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
@@ -718,9 +720,14 @@ p {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 375px) {
+  .form-checkbox-agreement {
+    font-size: calc(12px + 69 * (100vw - 375px) / 825);
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-checkbox-agreement {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.46;
   }
 }
@@ -768,11 +775,6 @@ p {
   border: 1px solid var(--secondary-color);
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
-}
-@media screen and (min-width: 1200px) {
-  .form-input {
-    width: 448px;
-  }
 }
 
 .form-textarea {
@@ -1055,6 +1057,8 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
+  -ms-flex-preferred-size: calc((100% - 120px) / 4);
+      flex-basis: calc((100% - 120px) / 4);
 }
 
 .team-card {
@@ -1137,7 +1141,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1153,6 +1156,39 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.portfolio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn {
+    margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1218,22 +1254,26 @@ p {
 }
 
 .pictures-list {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  margin: calc(-1 * var(--indent) / 2);
+}
+.pictures-list .pictures-item {
+  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items-adv)) / var(--items-adv));
+      flex-basis: calc((100% - var(--indent) * var(--items-adv)) / var(--items-adv));
+  margin: calc(var(--indent) / 2);
 }
 @media screen and (min-width: 768px) {
   .pictures-list {
-    margin-top: 30px;
+    --items-adv: 2;
   }
 }
 @media screen and (min-width: 1200px) {
   .pictures-list {
-    margin-top: 50px;
+    --items-adv: 4;
   }
 }
 
@@ -1241,8 +1281,6 @@ p {
   cursor: pointer;
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .pictures-item:hover, .pictures-item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
