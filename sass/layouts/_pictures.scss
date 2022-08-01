@@ -1,25 +1,8 @@
-// .pictures-list {
-//   margin-top: 40px;
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-
-//   @media screen and (min-width: 768px) {
-//     margin-top: 30px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-top: 50px;
-//   }
-// }
-
 .pictures-list {
   display: flex;
   flex-wrap: wrap;
 
   margin: calc(-1 * var(--indent) / 2);
-
-  // @extend %list;
 
   .pictures-item {
     flex-basis: calc((100% - var(--indent) * var(--items-adv)) / var(--items-adv));
@@ -50,7 +33,8 @@
   position: relative;
   overflow: hidden;
 
-  width: 450px;
+  // удалить
+  // width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -83,7 +67,8 @@
   }
 
   display: block;
-  width: 450px;
+  // удалить
+  // width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -102,7 +87,8 @@
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
-  width: 450px;
+  // удалить
+  // width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;

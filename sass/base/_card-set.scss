@@ -8,8 +8,6 @@
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
 }
 
-// NEW
-
 .card-set__list-new {
   display: flex;
   flex-wrap: wrap;
@@ -27,5 +25,26 @@
 
   @media screen and (min-width: 1200px) {
     --items-adv: 4;
+  }
+}
+
+.card-list__list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: calc(-1 * var(--indent) / 2);
+
+  .card-list__item-portfolio {
+    position: relative;
+    flex-basis: calc((100% - var(--indent) * var(--items-work)) / var(--items-work));
+    margin: calc(var(--indent) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    --items-work: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items-work: 3;
   }
 }
