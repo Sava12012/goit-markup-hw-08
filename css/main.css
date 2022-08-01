@@ -607,7 +607,7 @@ p {
 
 .modal {
   position: absolute;
-  z-index: 10000;
+  z-index: 1000;
   width: calc(100% - 30px);
   top: 50%;
   left: 50%;
@@ -620,11 +620,13 @@ p {
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 450px;
+    max-width: 528px;
+    height: 581px;
   }
 }
+
 .modal-form {
   padding: 40px;
   display: -webkit-box;
@@ -722,12 +724,12 @@ p {
 }
 @media screen and (max-width: 375px) {
   .form-checkbox-agreement {
-    font-size: calc(12px + 69 * (100vw - 375px) / 825);
+    font-size: calc(12px + 49 * (100vw - 375px) / 825);
   }
 }
 @media screen and (min-width: 1200px) {
   .form-checkbox-agreement {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.46;
   }
 }
