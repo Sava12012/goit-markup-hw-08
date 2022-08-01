@@ -8,55 +8,24 @@
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
 }
 
-// .card-set__item {
-//   @media screen and (min-width: 768px) {
-//     flex-basis: calc((100% - 2 * 30px) / 2);
-//   }
-//   @media screen and (min-width: 1140px) {
-//     flex-basis: calc((100% - 3 * 30px) / 3);
-//   }
-//   &:not(:last-child) {
-//     @media screen and (max-width: 767px) {
-//       margin-bottom: 30px;
-//     }
-//   }
-// }
+// NEW
 
-// /* сітка із застосуванням flex-box по 4-ри елемента     */
-// .card-set__list {
-//   @extend %card-set__list;
+.card-set__list-new {
+  display: flex;
+  flex-wrap: wrap;
 
-//   @extend %list;
+  margin: calc(-1 * var(--indent) / 2);
 
-//   .card-set__item {
-//     flex-basis: calc((100% - var(--indent) * var(--items-adv)) / var(--items-adv));
-//     margin: calc(var(--indent) / 2);
-//   }
+  .card-set__item-new {
+    flex-basis: calc((100% - var(--indent) * var(--items-adv)) / var(--items-adv));
+    margin: calc(var(--indent) / 2);
+  }
 
-//   @media screen and (min-width: 768px) {
-//     --items-adv: 2;
-//   }
+  @media screen and (min-width: 768px) {
+    --items-adv: 2;
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     --items-adv: 4;
-//   }
-// }
-
-// /* сітка із застосуванням flex-box по 3-ри елемента     */
-// .card-list__list {
-//   @extend %card-set__list;
-
-//   .card-list__item {
-//     position: relative;
-//     flex-basis: calc((100% - var(--indent) * var(--items-work)) / var(--items-work));
-//     margin: calc(var(--indent) / 2);
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     --items-work: 2;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     --items-work: 3;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    --items-adv: 4;
+  }
+}
