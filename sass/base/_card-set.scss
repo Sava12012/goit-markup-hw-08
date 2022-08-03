@@ -11,7 +11,6 @@
 .card-set__list-new {
   display: flex;
   flex-wrap: wrap;
-
   margin: calc(-1 * var(--indent) / 2);
 
   .card-set__item-new {
@@ -27,11 +26,9 @@
     --items-adv: 4;
   }
 }
-
 .card-list__list-portfolio {
   display: flex;
   flex-wrap: wrap;
-
   margin: calc(-1 * var(--indent) / 2);
 
   .card-list__item-portfolio {
